@@ -13,6 +13,8 @@ public class ClasePrincipal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //Explicación 1
+        
         // Opción 1
         /*
         Scanner teclado = new Scanner(System.in);
@@ -34,7 +36,7 @@ public class ClasePrincipal {
         */
         
         // Opcion 2
-        Scanner teclado = new Scanner(System.in);
+        /*Scanner teclado = new Scanner(System.in);
         int numero = 0;
         do{
             try {
@@ -49,6 +51,18 @@ public class ClasePrincipal {
         }while(true); // !numeroCorrecto -> numeroCorrecto == false
         
         System.out.format("El valor de la variable número es %d\n", numero);
+        */
+        // ------------------------------------
+        //Explicación 2
+        /*int numero;
+        System.out.print("Introduzca un número entero: ");
+        numero = ES.leerEntero();
+        System.out.format("El valor de la variable número es %d\n", numero);
+        */
+        // ------------------------------------
+        //Explicación 3
+        int numero;
+        numero = ES.leerEntero("Introduzca un número entero: ");
+        System.out.format("El valor de la variable número es %d\n", numero);
     }
-
 }
